@@ -14,20 +14,19 @@
 </head>
 
 <body>
-	<h1>Welcome to Pokemon</h1>
+	<h1>Login Page</h1>
 
-    <form action="/logout" method="post" onsubmit="confirmLogout">
-        <input type="submit" value="Logout"/>
+    <form action="/login" method="post">
+        <fieldset>
+            
+            <label><strong>Username:</strong> <input type="text" name="user"/></label>
+
+            <label><strong>Password:</strong> <input type="text" name="password"></label> <br><br>
+        </fieldset> <br>
+
+        <input type="reset" />
+        <input type="submit" value="Login"/>
     </form>
-
-    <script>
-        function confirmApply() {
-            if(window.confirm("Are you sure you want to log out?")) {
-                return true;
-            }
-            return false;
-        }
-    </script>
 
 </body>
 

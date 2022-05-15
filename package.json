@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/ErikHillard/Poke335#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "http": "^0.0.1-security",
     "mongodb": "^4.6.0",
     "node": "^17.7.2",
