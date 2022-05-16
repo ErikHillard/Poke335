@@ -6,8 +6,8 @@ const password = process.env.MONGO_DB_PASSWORD;
 
 /* Our database and collection */
 const databaseAndCollection = {
-  db: process.env.MONGO_DB_NAME,
-  collection: process.env.MONGO_COLLECTION,
+  db: "CMSC335_POKE",
+  collection: "pokemonteam",
 };
 
 /****** DO NOT MODIFY FROM THIS POINT ONE ******/
