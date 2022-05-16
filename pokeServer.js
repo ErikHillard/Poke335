@@ -18,12 +18,12 @@ if (process.argv.length == 3) {
 
 require("dotenv").config({ path: path.resolve(__dirname, '.env') }) 
 
-const userName = process.env.MONGO_DB_USERNAME;
-const password = process.env.MONGO_DB_PASSWORD;
+//const userName = process.env.MONGO_DB_USERNAME;
+//const password = process.env.MONGO_DB_PASSWORD;
 let PORT_NUMBER = process.env.PORT;
 
 /* Our database and collection */
-const databaseAndCollection = {db: process.env.MONGO_DB_NAME, collection: process.env.MONGO_COLLECTION};
+//const databaseAndCollection = {db: process.env.MONGO_DB_NAME, collection: process.env.MONGO_COLLECTION};
 
 
 /* 

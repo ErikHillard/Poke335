@@ -15,7 +15,7 @@
 
 <body>
     <h1>Pokemon Team Builder</h1>
-    <form action="http://localhost:<%- port %>/pokemonlookup" method="post">
+    <form action="https://cmsc335pokemon.herokuapp.com//pokemonlookup" method="post">
         Search Pokemon:
         <input type="text" name="pkm" required>
         <br><br>
@@ -33,7 +33,7 @@
     <img id="pic" alt="Pokemon" width="150" height="150">
     <p id="description" style="visibility: hidden;">This pokemon doesn't exist</p>  
 
-    <form action="http://localhost:<%- port %>/addtoteam" method="post" id="addtoteam" hidden>
+    <form action="https://cmsc335pokemon.herokuapp.com/addtoteam" method="post" id="addtoteam" hidden>
         <input type="hidden" name="name" value="<%- pkm %>">
         <input type="hidden" name="img" >
         <input type="submit" value="Add to team">
