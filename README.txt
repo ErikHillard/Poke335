@@ -7,10 +7,10 @@ YouTube Demo Link: https://youtu.be/957juJ9yXqU
 Note for users: when searching for pokemon use ALL LOWERCASE
 
 Valid Pokemon Ex.
-Piplup
-Pikachu
-Charizard
-Mewtwo
+piplup
+pikachu
+charizard
+mewtwo
 
 Not Valid Pokemon Ex.
 Testudo
