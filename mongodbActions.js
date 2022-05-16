@@ -12,7 +12,7 @@ const databaseAndCollection = {
 
 /****** DO NOT MODIFY FROM THIS POINT ONE ******/
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const uri = `mongodb+srv://${userName}:${password}@cluster0.q003m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://athenfam:Apple2000@cluster0.q003m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
