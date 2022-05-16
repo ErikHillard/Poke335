@@ -10,7 +10,7 @@ let express = require("express"); /* Accessing express module */
 let app = express(); /* app is a request handler function */
 let bodyParser = require("body-parser");
 
-let PORT_NUMBER = 8000;
+
 
 if (process.argv.length == 3) {
     PORT_NUMBER = process.argv[2];
@@ -20,6 +20,7 @@ require("dotenv").config({ path: path.resolve(__dirname, '.env') })
 
 const userName = process.env.MONGO_DB_USERNAME;
 const password = process.env.MONGO_DB_PASSWORD;
+let PORT_NUMBER = process.env.PORT;
 
 /* Our database and collection */
 const databaseAndCollection = {db: process.env.MONGO_DB_NAME, collection: process.env.MONGO_COLLECTION};
@@ -73,7 +74,8 @@ app.get("/deleteteam", async (request, response) => {
 
 console.log(`Web server started and running at http://localhost:${PORT_NUMBER}`);
 process.stdout.write("Type stop to shutdown the server: ");
-http.createServer(app).listen(PORT_NUMBER);
+app.listen(PORT_NUMBER);
+//http.createServer(app).listen(PORT_NUMBER);
 
 process.stdin.on('readable', function() {
         let command = process.stdin.read();
