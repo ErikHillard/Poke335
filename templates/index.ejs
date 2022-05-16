@@ -16,6 +16,18 @@
 <body>
 	<h1>Welcome to Pokemon</h1>
 
+    <form action="https://cmsc335pokemon.herokuapp.com/pokemonlookup" method="post">
+        Search Pokemon:
+        <input type="text" name="pkm" required>
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+    <hr>
+    <a href="/team">View your pokemon team!</a>
+
     <form action="/logout" method="post" onsubmit="confirmLogout">
         <input type="submit" value="Logout"/>
     </form>
